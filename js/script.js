@@ -16,9 +16,16 @@ const playGame = () => {
         cell.append(i);
 
         gridElement.appendChild(cell)
+
+        // ! le celle cliccate diventano verdi
+
+        cell.addEventListener('click',function(){
+        cell.classList.toggle('clicked')
+})
     }
 }
 
 // ! creo evento del button
 
 button.addEventListener("click", playGame)
+
